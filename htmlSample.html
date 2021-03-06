@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Page Title</title>
+	<style>
+		h1 {
+			color: blue;
+			text-align: left;
+		}
+	</style>
+	
+	<script>
+		function myClickFunction(){
+  
+			//alert("hello, world!");
+  
+			myOutputField = document.getElementById("myOutput");
+  
+			if (myOutputField.innerHTML == ""){
+				myOutputField.innerHTML = "Hello, World!";
+			} else {
+				myOutputField.innerHTML = "";
+			}
+		}
+	</script>
+  </head>
+  
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    
+    <button onClick="myClickFunction()">Click me</button>
+    <br><br>
+    <div id="myOutput"></div>
+    
+  </body>
+
+</html>
